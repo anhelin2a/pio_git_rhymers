@@ -1,0 +1,23 @@
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Maven
+target/
+*.iml
+*.ipr
+*.iws
+
+# Gradle
+build/
+*.iml
+*.ipr
+*.iws
+
+# NetBeans
+nbproject/private/
+build/
