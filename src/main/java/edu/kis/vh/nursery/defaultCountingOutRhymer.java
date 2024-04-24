@@ -11,22 +11,22 @@ public class DefaultCountingOutRhymer {
         Numbers[++total] = in;
     }
 
-    public boolean callCheck() {
+    public boolean CallCheck() {
         return total == -1;
     }
         
-    public boolean isFull() {
+    public boolean IsFull() {
         return total == 11;
     }
         
-    protected int peekaboo() {
-        if (callCheck())
+    protected int Peekaboo() {
+        if (CallCheck())
             return -1;
         return Numbers[total];
     }
             
-    public int countOut() {
-        if (callCheck())
+    public int CountOut() {
+        if (CallCheck())
             return -1;
         return Numbers[total--];
     }
