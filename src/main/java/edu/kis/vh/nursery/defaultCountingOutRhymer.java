@@ -1,10 +1,15 @@
 package edu.kis.vh.nursery;
 
+    
+    public static int TOTAL_NUMBER = 12;
+    public static final int EMPT = -1;
+    public static int MAX_CAPACIT = TOTAL_NUMBER;
+
 public class DefaultCountingOutRhymer {
 
-    private int[] Numbers = new int[12];
+    private int[] Numbers = new int[TOTAL_NUMBER];
 
-    public int total = -1;
+    public int total = EMPT;
 
     public void countIn(int in) {
         if (!isFull())
@@ -12,22 +17,22 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean CallCheck() {
-        return total == -1;
+        return total == EMPT;
     }
         
     public boolean IsFull() {
-        return total == 11;
+        return total == TOTAL_NUMBER;
     }
         
     protected int Peekaboo() {
         if (CallCheck())
-            return -1;
+            return EMPT;
         return Numbers[total];
     }
             
     public int CountOut() {
         if (CallCheck())
-            return -1;
+            return EMPT;
         return Numbers[total--];
     }
 
