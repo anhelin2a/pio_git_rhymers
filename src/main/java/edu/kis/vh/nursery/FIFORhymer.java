@@ -17,5 +17,6 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
         CountIn(temp.CountOut());
         
         return ret;
+        
     }
 }

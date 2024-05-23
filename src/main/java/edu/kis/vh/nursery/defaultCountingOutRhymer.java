@@ -15,6 +15,9 @@ public class DefaultCountingOutRhymer {
         if (!isFull())
         Numbers[++total] = in;
     }
+    public int getTotal() {
+    return total;
+}
 
     public boolean CallCheck() {
         return total == EMPT;
