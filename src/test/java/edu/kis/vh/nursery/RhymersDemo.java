@@ -11,7 +11,7 @@ class RhymersDemo {
         Rhymersfactory factory = new DefaultRhymersFactory();
         testRhymers(factory);
     }
-        
+        //tutaj poprawiony kod
         public static void testRhymers(Rhymersfactory factory) {
         defaultCountingOutRhymer[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
                 factory.GetFIFORhymer(), factory.GetHanoiRhymer()};
