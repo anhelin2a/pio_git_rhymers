@@ -13,6 +13,8 @@ public Node(int value) {
         return value;
     }
 
+
+
     public void setValue(int value) {
         this.value = value;
     }
@@ -21,7 +23,7 @@ public Node(int value) {
         return prev;
     }
 
-    public void setPrev(Node prev) {
+    public void setPrev(Node prev) { 
         this.prev = prev;
     }
 
