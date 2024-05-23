@@ -1,15 +1,15 @@
 package edu.kis.vh.nursery;
 
     
-    public static int TOTAL_NUMBER = 12;
-    public static final int EMPT = -1;
-    public static int MAX_CAPACIT = TOTAL_NUMBER;
-
+    private static final int TOTAL_NUMBER = 12;
+    private static final int EMPTY = -1;
+    private static final int MAX_CAPACITY = TOTAL_NUMBER;
+    
 public class DefaultCountingOutRhymer {
 
-    private int[] Numbers = new int[TOTAL_NUMBER];
-
-    public int total = EMPT;
+    private final int[] Numbers = new int[TOTAL_NUMBER];
+    
+    private int total = EMPT;
 
     public void countIn(int in) {
         if (!isFull())
